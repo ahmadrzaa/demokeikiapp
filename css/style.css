@@ -1,0 +1,192 @@
+/* Style for the header */
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/*.logo {
+  max-width: 100px; /* Adjust as needed */
+ /* margin: 0 auto; /* Center the logo horizontally */
+/*} 
+
+
+/*.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  width: 40px;
+} */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.logo {
+  max-width: 100px; /* Adjust as needed */
+  
+ margin: 0 auto; /* Center the logo horizontally */
+
+}
+
+.hamburger-icon {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  
+  
+ 
+
+  width: 70px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #f4f6f8;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 24px;
+  
+
+
+}
+
+
+.menu-icon {
+  width: 30px;
+  height: 3px;
+  background-color:#262626;
+  margin: 6px 0;
+  transition: 0.4s;
+  font-weight: var(--font-weight-bold);
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.separator {
+  
+    border: none; /* Remove default border */
+    border-top: 1px solid #ccc; /* Add top border with gray color */
+    width: 100%; /* Make the line span the full width */
+
+
+}
+
+/* Main content styles */
+.main-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+}
+/* Style for the age group container */
+.age-group-container {
+  display: flex; /* Display children in a column */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align items horizontally */
+}
+
+/* Style for the age group box */
+.age-group-box {
+  width: 450px; /* Adjust width as needed */
+  background-color: #f4f6f7; /* Background color */
+  border: 1px solid #ddd; /* Border */
+  border-radius: 10px; /* Border radius */
+  margin-bottom: 20px; /* Spacing between boxes */
+  padding: 10px; /* Padding inside each box */
+  display: flex; /* Display children in a row */
+  flex-direction: row; /* Arrange children horizontally */
+  align-items: center; /* Center-align items vertically */
+  justify-content: left; /* Center-align items horizontally */
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Style for the age group box image */
+.age-group-box img {
+  width: 80px; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Round image corners */
+  margin-right: 10px; /* Spacing between image and paragraph */
+}
+
+/* Style for the age group box paragraph */
+.age-group-box p {
+  margin: 0; /* Remove default margin */
+
+}
+
+/* Side panel styles */
+.side-panel {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #eff9fd;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.side-panel-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the language selector */
+#language-selector {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* ... existing styles ... */
+
+/* Responsive styling for mobile phones */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px; /* Less padding on smaller screens */
+  }
+
+  .logo {
+    max-width: 80px; /* Smaller logo on mobile */
+  }
+
+  .hamburger-icon {
+    width: 50px; /* Smaller menu button */
+    height: 40px;
+    background-size: 18px; /* Smaller icon in the button */
+  }
+
+  .age-group-container {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .age-group-box {
+    flex-direction: column; /* Stack elements vertically */
+    width: auto; /* Take the full width available */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .age-group-box img {
+    width: 60px; /* Smaller images */
+    margin-bottom: 10px; /* Space between image and text when stacked */
+  }
+
+  .side-panel {
+    width: 100%; /* Side panel takes up full screen width on small devices */
+  }
+}
+
+/* You can add more specific media queries for different breakpoints as needed */

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Language Selection Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- <div class="header">
+    <img src="../img/7e3e8c294aca93bb4f818fe07a2ee5bc.svg" alt="Keiki Logo" class="logo">
+    <div class="hamburger-menu" onclick="openSidePanel()">
+        <div class="menu-icon"></div>
+    </div>
+    
+</div> -->
+<div class="header">
+  <img src="../img/7e3e8c294aca93bb4f818fe07a2ee5bc.svg" alt="Keiki Logo" class="logo">
+  <img src="../img/6fe954db8bac9644b1561fdd62fa18d0.svg" alt="Hamburger Menu" class="hamburger-icon" onclick="openSidePanel()">
+</div>
+
+
+<hr class="separator">
+
+<div class="main-content">
+  <h1>Choose the age of your child</h1>
+  <p class="subtitle">to create personal learning plan</p> 
+  <div class="age-group-container">
+      <!-- Repeat this block for each age group, changing the id and image source -->
+      <a href="./gender.html" class="age-group-box" id="age-0-2">
+          <img src="../img/765c63851f5208d1662a25217f6e8d55 (1).svg" alt="Age 0-2">
+          <p>Child's age: 0-2</p>
+      </a>
+      <!-- Other age groups here -->
+      <a href="./gender.html" class="age-group-box" id="age-3-4">
+          <img src="../img/05dd5f09a05f86cfc983014e7d7df543.svg" alt="Age 3-4">
+          <p>Child's age: 3-4</p>
+      </a>
+      <a href="./gender.html" class="age-group-box" id="age-5-6">
+          <img src="../img/dae7464214f7008750ff4525b71327f2.svg" alt="Age 5-6">
+          <p>Child's age: 5-6</p>
+      </a>
+      <a href="./gender.html" class="age-group-box" id="age-7-plus">
+          <img src="../img/bb6a8f677dee1f6d55d15d67526323ff.svg" alt="Age 7+">
+          <p>Child's age: 7+</p>
+      </a>
+  </div>
+</div>
+
+
+<div id="side-panel" class="side-panel">
+    <span class="close" onclick="closeSidePanel()">&times;</span>
+    <div class="side-panel-content">
+        <p>Terms of use</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+        <p>Subscription Terms</p>
+        <p>Contact us</p>
+        <select id="language-selector" onchange="changeLanguage(this.value)">
+            <option value="English">English</option>
+            <option value="Arabic">Arabic</option>
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+        </select>
+    </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
